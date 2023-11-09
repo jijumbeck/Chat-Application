@@ -1,0 +1,17 @@
+.Message {
+    width: fit-content;
+
+    padding: 0.5em 0.7em;
+    margin: 1em;
+
+    border-radius: 10px;
+    background-color: rgb(54, 118, 255);
+}
+
+.Message_mine {
+    background-color: rgb(54, 118, 255);
+}
+
+.Message_other {
+    background-color: rgb(32, 61, 124);
+}
