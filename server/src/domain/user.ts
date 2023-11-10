@@ -1,4 +1,4 @@
-import { dogNameGenerator } from "./nameGenerator";
+import { dogNameGenerator } from "./nameGenerator.js";
 import { v4 as uuidv4 } from 'uuid';
 
 export interface User {

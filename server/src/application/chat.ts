@@ -1,7 +1,7 @@
-import { Message } from "../domain/message";
-import { ChatUser } from "../domain/user";
+import { Message } from "../domain/message.js";
+import { ChatUser } from "../domain/user.js";
 
-class Chat {
+export class Chat {
     chatHistory: Array<Message>;
     chatUsers: Map<string, ChatUser>;
 
@@ -15,10 +15,10 @@ class Chat {
     }
 
     addUser(user: ChatUser) : void {
-        this.chatUsers[user.id] = user;
+        this.chatUsers.set(user.id, user);
     }
 
     removeUser(id: string) : void {
-        delete this.chatUsers[id];
+        this.chatUsers.delete(id);
     }
 }
