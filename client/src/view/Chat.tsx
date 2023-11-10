@@ -1,4 +1,5 @@
 import { Message, MessageProps } from "./Message"
+import './Chat.css';
 
 export interface ChatProps {
     messages: Array<MessageProps>,
@@ -7,10 +8,10 @@ export interface ChatProps {
 export const Chat = ({ messages }: ChatProps) => {
     return (
         <div 
-            className="message_container"
+            className="MessageContainer"
         >
             {
-                messages.map(message => <Message {...message} />)
+                messages.map(message => <Message key={message.id} {...message} />)
             }
         </div>
     )

@@ -6,12 +6,30 @@
 
     border-radius: 10px;
     background-color: rgb(54, 118, 255);
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .Message_mine {
-    background-color: rgb(54, 118, 255);
+    margin-left: auto;
+    background-color: rgb(72, 2, 153)
 }
 
 .Message_other {
-    background-color: rgb(32, 61, 124);
+    background-color: rgb(10, 32, 80);
+}
+
+.UsernameLabel {
+    font-size: 0.8rem;
+    margin: 0;
+    color: rgb(154, 210, 255);
+    font-weight: bold;
+}
+
+.MessageText {
+    margin: 0.4em 0;
+}
+
+.Message > .MessageText {
+    margin-left: auto;
 }

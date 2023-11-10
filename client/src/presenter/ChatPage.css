@@ -1,4 +1,26 @@
 .ChatPage {
-    background-color: cadetblue;
-    
+    background-color: rgb(3, 13, 34);
+
+    padding: 1em;
+    margin:auto;
+    border-radius: 25px;
+
+    width: 50%;   
+}
+
+@media screen and (max-width: 960px) {
+    .ChatPage {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .ChatPage {
+        width: 90%;
+    }
+}
+
+.ChatPage > h2 {
+    text-align: center;
+    color: #ffffff;
 }
